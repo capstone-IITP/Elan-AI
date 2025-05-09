@@ -17,9 +17,11 @@ function AuthContent() {
   
   // Set initial tab based on URL query parameter
   useEffect(() => {
-    const tab = searchParams.get('tab');
-    if (tab === 'register') {
-      setActiveTab('register');
+    if (searchParams) {
+      const tab = searchParams.get('tab');
+      if (tab === 'register') {
+        setActiveTab('register');
+      }
     }
   }, [searchParams]);
 

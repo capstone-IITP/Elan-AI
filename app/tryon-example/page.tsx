@@ -48,7 +48,7 @@ export default function TryOnExamplePage() {
   const [uploadedImagesUrls, setUploadedImagesUrls] = useState<{[key: string]: string}>({});
   
   // Handle drag start for clothing items
-  const handleDragStart = (e: React.DragEvent, item: ClothingItem) => {
+  const handleDragStart = (e: React.DragEvent<HTMLDivElement>, item: ClothingItem) => {
     e.dataTransfer.setData('item', JSON.stringify(item));
   };
   
@@ -133,7 +133,7 @@ export default function TryOnExamplePage() {
                   whileTap={{ scale: 0.97 }}
                   className="bg-gray-800/80 rounded-lg p-3 relative cursor-move"
                   draggable
-                  onDragStart={(e) => handleDragStart(e, item)}
+                  onDragStart={(e) => handleDragStart(e as unknown as React.DragEvent<HTMLDivElement>, item)}
                 >
                   <div className="absolute top-2 right-2 z-10 bg-black/60 backdrop-blur-sm rounded-md px-2 py-1 text-xs">
                     {item.type}
