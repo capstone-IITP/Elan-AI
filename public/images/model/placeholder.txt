@@ -1,0 +1,9 @@
+This directory should contain model images for the virtual try-on experience.
+
+Recommended images:
+- female_model_front.jpg
+- female_model_side.jpg
+- female_model_back.jpg
+- male_model_front.jpg
+- male_model_side.jpg
+- male_model_back.jpg 

@@ -1,0 +1,11 @@
+This directory should contain clothing item images for the virtual try-on experience.
+
+Recommended image structure:
+- white-shirt.jpg (Tops)
+- black-pants.jpg (Bottoms)
+- navy-blazer.jpg (Tops)
+- beige-trousers.jpg (Bottoms)
+- brown-shoes.jpg (Shoes)
+- wristwatch.jpg (Accessories)
+
+Make sure images are square or rectangular with consistent dimensions for best display results. 
